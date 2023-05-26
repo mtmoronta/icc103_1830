@@ -2,8 +2,30 @@
 #include <stdlib.h>
 #include <string.h>
 
+typedef int entero;
+
+typedef struct
+{
+    entero codigo;
+    char nombre[50];
+    entero edad;
+    float salario;
+} Persona;
+
 int main()
 {
+    Persona profesor; // es más sencillo escribir esto que struct Persona profesor;
+    profesor.codigo = 5;
+    gets(profesor.nombre);
+    profesor.edad = 30;
+    profesor.salario = 40000;
+
+    printf("%d\n%s\n%d\n%.2f",
+        profesor.codigo,
+        profesor.nombre,
+        profesor.edad,
+        profesor.salario);
+
     /*int a = 5, b = 10;
     int *p_a = &a;
 
@@ -55,7 +77,7 @@ int main()
     printf("%d", sizeof(enteroLargo));*/
 
     //const int TAMANOCADENA = 100;
-    char cadena[100];
+    /*char cadena[100];
     int i, longitud;
 
     printf("Digite su nombre completo: ");
@@ -69,7 +91,9 @@ int main()
 
     strcpy(pCadena, cadena);
 
-    puts(pCadena);
+    puts(pCadena);*/
+
+
 
     return 0;
 }
