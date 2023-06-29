@@ -2,7 +2,33 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef int entero;
+
+/*
+int main()
+{
+    const char ruta[]="hola.txt";
+    FILE *miArchivo = fopen(ruta, "a+t");
+    char buffer[100];
+
+    if(miArchivo == NULL)
+    {
+        printf("Error.\n");
+        return 0;
+    }
+
+    fputs("Esta es una nueva línea.\n", miArchivo);
+    rewind(miArchivo);
+
+    while(!feof(miArchivo))
+    {
+        fgets(buffer, 100, miArchivo);
+        printf("%s\n", buffer);
+    }
+
+    fclose(miArchivo);
+*/
+
+/*typedef int entero;
 
 typedef struct
 {
@@ -25,7 +51,7 @@ int main()
         profesor.nombre,
         profesor.edad,
         profesor.salario);
-
+*/
     /*int a = 5, b = 10;
     int *p_a = &a;
 
