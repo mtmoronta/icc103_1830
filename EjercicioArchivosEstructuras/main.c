@@ -56,6 +56,7 @@ int main()
     }while(seleccion != 0);
 
     mostrarClientes(archivoClientes);
+    fclose(archivoClientes);
 
     return 0;
 }

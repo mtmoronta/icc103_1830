@@ -2,6 +2,28 @@
 #include <stdlib.h>
 #include <string.h>
 
+void MostrarRangoIterativo(int, int);
+
+int main()
+{
+    // Realice un programa que muestre todos los números dentro de un
+    // rango indicado por el usuario.
+    int limI, limS, valorActual;
+
+    printf("Digite los límites: ");
+    do
+    {
+        printf("Inferior: ");
+        scanf("%d", &limI);
+        printf("Superior: ");
+        scanf("%d", &limS);
+    } while (limI > limS);
+
+    for(valorActual = limI; valorActual <= limS; valorActual++)
+    {
+        printf("%d\t", valorActual);
+    }
+    
 
 /*
 int main()
