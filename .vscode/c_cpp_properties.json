@@ -10,7 +10,13 @@
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
-            ]
+            ],
+            "compilerArgs": [
+                "-O3 -Wall -Wextra -std=c99 -pedantic"
+            ],
+            "cStandard": "c99",
+            "cppStandard": "gnu++17",
+            "compileCommands": ""
         }
     ],
     "version": 4
